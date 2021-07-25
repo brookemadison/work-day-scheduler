@@ -6,16 +6,16 @@
 ## Link
 https://brookemadison.github.io/work-day-scheduler/
 
-## Description
-This Work Day Scheduler was developed as a simple calendar application that allows a user to save events for each hour of the work day. Each time block is color-coded to indicate whether it is in the past (gray), present (light-green), or future (yellow).
-
-
 
 ## Table of Contents
 * [Description](#description)
 * [Framework](#Framework)
 * [Credits](#credits)
 * [License](#license)
+
+
+## Description
+This Work Day Scheduler was developed as a simple calendar application that allows a user to save events for each hour of the work day. Each time block is color-coded to indicate whether it is in the past (gray), present (light-green), or future (yellow).
 
 
 ## Framework
