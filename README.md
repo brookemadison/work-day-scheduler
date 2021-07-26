@@ -20,11 +20,12 @@ This Work Day Scheduler was developed as a simple calendar application that allo
 
 
 ## Framework
-*[HTML]
-*[CSS]
-*[JavaScript]
-*[jQuery]
-*[Luxon]
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* jQuery
+* Luxon
 
 
 ## Credits
