@@ -25,108 +25,78 @@
   <div class="container">
     <!-- Timeblocks go here -->
     <!-- 9 AM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">09:00 AM</span>
-      </div>
-      <textarea id="9amevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button id=btn class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-9" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="9am" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">9:00 AM</span>
+      <textarea id="text-9" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn9" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 10 AM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">10:00 AM</span>
-      </div>
-      <textarea id="10amevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-10" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="10am" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">10:00 AM</span>
+      <textarea id="text-10" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn10" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 11 AM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">11:00 AM</span>
-      </div>
-      <textarea id="11amevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-11" class="row time-block mb-3 input-group input-group-prepend">
+      <span id=11am" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">11:00 AM</span>
+      <textarea id="text-11" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn11" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 12 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">12:00 PM</span>
-      </div>
-      <textarea id="12pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-12" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="12pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">12:00 PM</span>
+      <textarea id="text-12" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn12" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 1 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">01:00 PM</span>
-      </div>
-      <textarea id="1pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-13" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="4pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">1:00 PM</span>
+      <textarea id="text-13" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn1" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 2 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">02:00 PM</span>
-      </div>
-      <textarea id="2pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-14" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="2pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">2:00 PM</span>
+      <textarea id="text-14" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn2" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 3 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">03:00 PM</span>
-      </div>
-      <textarea id="3pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-15" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="3pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">3:00 PM</span>
+      <textarea id="text-15" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn3" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 4 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">04:00 PM</span>
-      </div>
-      <textarea id="4pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-16" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="4pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">4:00 PM</span>
+      <textarea id="text-16" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn4" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
     <!-- 5 PM -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">05:00 PM</span>
-      </div>
-      <textarea id="5pmevent" value="" type="text" cols="100" rows="2"
-        class="form-control description textarea eventBlock"></textarea>
-      <div class="input-group-append">
-        <button class="btn saveBtn"><i class="bi bi-save-fill"></i></button>
-      </div>
+    <div id="block-17" class="row time-block mb-3 input-group input-group-prepend">
+      <span id="5pm" type="text" cols="100" rows="2" class="hour text-center time p-4 input-group-text">5:00 PM</span>
+      <textarea id="text-17" class="description form-control col-10" aria-label="With textarea"></textarea>
+      <a id="btn5" type="button" class="col-1 btn saveBtn btn-info input-group-append btn-outline-secondary">
+        <i class="bi bi-save-fill"></i>
+      </a>
     </div>
-    <div>
-      <button class="clearBtn">Clear Schedule <i class="bi bi-trash"></i>
-      </button>
-    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.1/build/global/luxon.min.js"></script>
     <script src="script.js"></script>

@@ -1,4 +1,6 @@
+
 // Current time and date
+
 var DateTime = luxon.DateTime
 var time = DateTime.now().toLocaleString(DateTime.DATE_FULL)
 console.log(time)
@@ -14,32 +16,64 @@ var dateElement = document.getElementById("currentTime")
 
 dateElement.textContent = time
 
-// Event block changes color based on future present or past hour 
+// Changes color based on future present or past hour 
 
-const rows = document.getElementsByClassName("row");
-let eventBlock = parseInt(DateTime.now().toLocaleString(DateTime.TIME_SIMPLE));
+var hours = $(".hour")
 
-Array.from(rows).forEach(row => {
-    let
-      rowIdString = row.id,
-      rowBlock;
-    if (rowIdString) {
-      rowBlock = parseInt(rowIdString);
+function changeBackgroundColor() {
+
+    var currentHourEl = DateTime.now(DateTime.TIME_24_SIMPLE);
+    ;
+
+
+    $(".description").each(function () {
+        var blockId = parseInt($(this).attr("id").split("-")[1])
+
+        if (blockId < currentHourEl) {
+            $(this).addClass("past")
+
+        } else if (currentHourEl == blockId) {
+            $(this).removeClass("past")
+            $(this).addClass("present")
+
+        } else {
+            $(this).removeClass("past")
+            $(this).removeClass("present")
+            $(this).addClass("future")
+        }
+
+
+    });
+};
+
+changeBackgroundColor()
+
+// save button saves to local storage
+
+$(".saveBtn").click(function (event) {
+    event.preventDefault();
+
+    var rowParent = $(this).parent();
+    
+    var textChild = $(rowParent).children(".description")
+   
+    var textID = ($(textChild).attr("id"))
+ 
+    var eventText = ($(textChild).val());
+
+    localStorage.setItem(textID, eventText)
+
+})
+
+
+function displayLocalStorage() {
+
+    for (var i = 9; i < 18; i++) {
+        var keyName = "text-" + i;
+        var displayTask = localStorage.getItem(keyName);
+        var keySelector = "#" + keyName;
+        $(keySelector).append(displayTask);
     }
-    if (rowBlock) {
-    // Compares row id to current hour and sets color accordingly
-    if (eventBlock === rowBlock) {
-      setColor(row, "lightgreen");
-    } else if ((eventBlock < rowBlock) && (eventBlock > rowBlock - 6)) {
-      setColor(row, "yellow");
-    } else if ((eventBlock > rowBlock) && (eventBlock < rowBlock + 6)) {
-      setColor(row, "lightgrey");
-    } else {
-      setColor(row, "white");
-    }
-  }
-});
-function setColor(element, color) {
-    element.style.backgroundColor = color;
-  }
-  
+}
+
+displayLocalStorage();
