@@ -19,7 +19,6 @@ dateElement.textContent = time
 // Changes color based on future present or past hour 
 
 var hours = $(".hour")
-
 function changeBackgroundColor() {
 
     var currentHourEl = DateTime.now(DateTime.TIME_24_SIMPLE);
@@ -54,11 +53,11 @@ $(".saveBtn").click(function (event) {
     event.preventDefault();
 
     var rowParent = $(this).parent();
-    
+
     var textChild = $(rowParent).children(".description")
-   
+
     var textID = ($(textChild).attr("id"))
- 
+
     var eventText = ($(textChild).val());
 
     localStorage.setItem(textID, eventText)
@@ -77,3 +76,10 @@ function displayLocalStorage() {
 }
 
 displayLocalStorage();
+
+
+//Clear schedule button to clear localStorage 
+$("#clearSchedule").on("click", function(){
+    localStorage.clear();
+  }) 
+
