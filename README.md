@@ -1,7 +1,8 @@
 # Work Day Scheduler 
 
 ## Mockup
-[image]
+<img width="703" alt="Screen Shot 2021-07-25 at 10 35 06 PM" src="https://user-images.githubusercontent.com/83384131/126925450-3c35a57b-2ccd-4127-b5a3-1afcc363fa24.png">
+
 
 ## Link
 https://brookemadison.github.io/work-day-scheduler/
